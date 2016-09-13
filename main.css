@@ -1,5 +1,6 @@
 body {
   background-color: beige;
+  padding: 20px;
 }
 
 fieldset {
@@ -43,4 +44,9 @@ input:focus, textarea:focus {
   box-shadow: 0 0 10px gray;
   background-color: lightyellow;
   border-color: green;
+}
+
+footer {
+  float: left;
+  clear: left;
 }
