@@ -1,8 +1,130 @@
 <!doctype html>
 <html>
-<head></head>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Force User Sign Up Form</title>
+</head>
 <body>
-  Hello World
-  and Goodbye
+  <header>
+    <h1>Force User Sign Up Form</h1>
+  </header>
+
+  <main>
+    <form action="http://requestb.in/1i1v3mv1" method="post">
+      <!-- Basic Info -->
+      <fieldset>
+        <legend>Basic Info</legend>
+
+        <label for="fullName">Full Name</label>
+        <br>
+        <input name="Full Name" type="text" id="fullName" placeholder="Luke Skywalker" class="textInput" required>
+        <br>
+
+        <label for="profilePic">Profile Pic</label>
+        <br>
+        <input name="Profile Picture" type="file" id="profilePic" required>
+        <br>
+
+        <label for="email">Email</label>
+        <br>
+        <input name="Email" type="email" id="email" placeholder="luke@sky.com" class="textInput" required>
+        <br>
+
+        <label>Side:</label>
+        <br>
+        <input name="side" value="light" type="radio" id="lightSide">
+        <label class="radioChoice" for="lightSide">Light</label>
+        <input name="side" value="dark" type="radio" id="darkSide">
+        <label class="radioChoice" for="darkSide">Dark</label>
+        <br>
+
+        <label for="originStory">Origin Story</label>
+        <br>
+        <textarea name="Origin Story"></textarea>
+        <br>
+      </fieldset>
+
+      <!-- Abilities -->
+      <fieldset>
+        <legend>Abilities</legend>
+
+        <label for="lightsaberColor">Lightsaber Color</label>
+        <br>
+        <select id="lightsaberColor">
+          <option value="default" selected>Select Color</option>
+          <option name="Lightsaber Color" value="Red">Red</option>
+          <option name="Lightsaber Color" value="Green">Green</option>
+          <option name="Lightsaber Color" value="Blue">Blue</option>
+          <option name="Lightsaber Color" value="Purple">Purple</option>
+        </select>
+        <br>
+
+        <label for="numLevitate">How many objects can you levitate at once?</label>
+        <br>
+        <input name="Number Objects Levitating" type="number" min="0" id="numLevitate">
+        <br>
+
+        <label for="favAbility">Favorite Ability</label>
+        <br>
+        <input name="Favorite Ability" type="text" id="favAbility" placeholder="precognition" class="textInput" required>
+        <br>
+
+        <label for="pilotExp">Pilot Experience</label>
+        <br>
+        <input name="Pilot Experience" value="speeder" type="checkbox" id="speeder" name="experience">
+        <label for="speeder" class="pilotExpChoice">Speeder</label>
+
+        <input name="Pilot Experience" value="transport" type="checkbox" id="transport" name="experience">
+        <label for="transport" class="pilotExpChoice">Transport</label>
+
+        <input name="Pilot Experience" value="xwing" type="checkbox" id="xwing" name="experience">
+        <label for="xwing" class="pilotExpChoice">X-wing</label>
+
+        <input name="Pilot Experience" value="tieFighter" type="checkbox" id="tieFighter" name="experience">
+        <label for="tieFighter" class="pilotExpChoice">TIE Fighter</label>
+
+        <input name="Pilot Experience" value="starship" type="checkbox" id="starship" name="experience">
+        <label for="starship" class="pilotExpChoice">Starship</label>
+
+        <input name="Pilot Experience" value="bantha" type="checkbox" id="bantha" name="experience">
+        <label for="bantha" class="pilotExpChoice">Bantha</label>
+        <br>
+      </fieldset>
+
+      <!-- Application Info -->
+      <fieldset>
+        <legend>Application Info</legend>
+
+        <label for="desiredMentor">Desired Mentor</label>
+        <br>
+        <input name="Desired Mentor" type="text" id="mentor" placeholder="Yoda" class="textInput" required>
+        <br>
+
+        <label for="applicationDate">Application Date</label>
+        <br>
+        <input name="Application Date" type="date" id="applicationDate">
+        <br>
+
+        <label for="applicationPassword">Application Password</label>
+        <br>
+        <input name="Application Password" type="password" id="applicationPassword">
+        <br>
+
+        <label for="darkSideQuestion">How do you get to the dark side?</label>
+        <br>
+        <textarea name="Dark Side Question"></textarea>
+        <br>
+
+        <input id="reset" type="reset" value="Start Over">
+        <input id="submit" type="submit" value="Apply">
+      </fieldset>
+    </form>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
 </body>
 </html>

@@ -1,0 +1,46 @@
+body {
+  background-color: beige;
+}
+
+fieldset {
+  float: left;
+  width: 30%;
+  background-color: lightgray;
+}
+
+label {
+  font-weight: bold;
+}
+
+.radioChoice, .pilotExpChoice {
+  font-weight: normal;
+}
+
+textarea {
+  height: 100px;
+  width: 100%;
+}
+
+.textInput {
+  width: 100%;
+}
+
+#numLevitate {
+  width: 30px;
+}
+
+#reset, #submit {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+#numLevitate:invalid {
+  background-color: lightpink;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px gray;
+  background-color: lightyellow;
+  border-color: green;
+}
